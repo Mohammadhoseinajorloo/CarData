@@ -47,7 +47,14 @@ plot:
 multi plot:
 1.year v target v age = year new and age down price up
 2.year v target Kms_Driven = ...
-3.
+3.year v target v Fuel_Type = diesels price up
+4.year v target v Seller_Type = Dealer price up 
+* It can be seen the growth of brokers over time and the gradual decline of personal sales
+5.year v target Transmission = Automatic car has a higher price
+6.corelation all feature = tow feature corelation ok
+##############################################################################################################
+
+
 
 
 
