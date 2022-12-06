@@ -1,3 +1,64 @@
 source ~/anaconda3/bin/activate root
+###############################################################
+data extraction : 301 row , 9 columns
+###############################################################
+describe: 
+year = min 2003, max 2018, mean 2013
+selling_price = 0.100000, 35.000000, 4.661296
+present_price = 0.320000, 92.600000, 7.628472	
+Kms_Driven = 500.000000, 500000.000000, 36947.205980
+Owner = 0.000000, 3.000000, 0.043189
+Fuel_Type = unique 3
+Seller_Type = 2
+Transmission = 2
+################################################################			
+info: null = 0, 4 col object, 3 col int, 2 col float
+################################################################
+plot:
+1.carname v target (first 150 sampel) = 2 noise target / target 25-35
+2.carname v target (second 150 sampel) = 0
+* 12 car (first 150 smpel) and 23 car (second 150 smpel) muti price total 35 car
+  63 car one price and tow price
+  
+3.year v targer = 0
+* year new  price up
+
+4.Present_Price v target = 0
+* Present_Price up targer up
+
+5.Kms_Driven v target = 1 noise / Kms_Driven 300000 up
+* Kms_Driven up targer down
+ 
+6.Fuel_Type v target = 0
+* 239 petrol , Diesel 60, cng 2 
+
+7.Seller_Type v target = 0
+* dealer 195, individual 106
+
+8.Transmission v target = 0
+* manual 261, automatic 40
+
+9.Owner v targer = 0
+* 0 290, 1 10, 3 1
+
+10.Age v targer = 0 
+* Age up targer down
+#############################################################################################################
+multi plot:
+1.year v target v age = year new and age down price up
+2.year v target Kms_Driven = ...
+3.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
