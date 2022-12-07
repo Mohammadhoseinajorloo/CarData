@@ -53,8 +53,40 @@ multi plot:
 5.year v target Transmission = Automatic car has a higher price
 6.corelation all feature = tow feature corelation ok
 ##############################################################################################################
+nosie:
+tow noise in selling_Price = index [64, 86]
+one noise in Kms_Drive = index [196]
+shape = 298x9
+##############################################################################################################
+labelencoding:
+Fuel_Type, Seller_Type, Transmission
+##############################################################################################################
+corelation coefation:
+1.Present_Price      0.879984             |1.Kms_Driven        -0.616234   Year 
+2.Year               0.268990             |2.Age               -1.000000
+3.Kms_Driven         0.089233             |##########################################	
+4.Owner             -0.093339   target    |1.Age                0.616234   Kms_Driven	
+5.Age               -0.268990	          |########################################## 
+6.Transmission_le   -0.388902             |1.Selling_Price     -0.592221   Seller_Type_le 
+7.Fuel_Type_le      -0.502180		  |2.Present_Price     -0.599187
+8.Seller_Type_le    -0.592221             |########################################## 
+##############################################################################################################
+normalizeing:
+minmaxscaler 0,1 [Year	Selling_Price	Present_Price	Kms_Driven	Owner	Age]
+concat [Fuel_Type_le	Seller_Type_le	Transmission_le]
+##############################################################################################################
+# create model
+onefeature :
+x = Present_Price
+y = Selling_Price
+train_test_split = 80-20
+train 238 test 60
+no cross validation
 
-
+evaluation :
+MAE = 0.048841675500382806
+MSE = 0.005564845992415167
+R2 = 0.8657376219518799
 
 
 
