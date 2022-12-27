@@ -1,0 +1,22 @@
+source ~/anaconda3/bin/activate root
+import warning -> neshan nadadan warning ha be ma
+countplot sns -> tedad har meghdar dar sutun haye gosaste
+boxplot sns -> vas data peyvaste v peyda kardan noise
+correlation -> correlation as sutun haye string kar madkhareiye va bad as labelencoding mishe anjam dad vali manteghish ine reye sutun haye string nabashe
+pd.unique -> meghdar haye unique har sutun ro namyesh mide
+replace -> ax 0 v 1 estefade nemishe az 2 shuru mishe chon bayad tu mohasebe asaresh ro did
+*labelencoder
+1.nominal scale -> hampushani nadare , ahamiyat adadi am nadare - dade haye esmi
+2.Ordinal Scale -> tartib dare , ertebat adadi vujud dare
+A.labelencoding -> ba range(0 ta tedad class -1) por mikone {1.scikit_learn -> preprocessing.LabelEncoding , category codes -> df['series'].cat.codes} * dar bishta mavaghe hich rabetei vujud nadard vali label encoder rabete moarefi mikonad
+B.one_Hot Encoding -> dodoi ijad mikone(0,1) , moshkel in ravesh afzayesh abad data, tedad kam maghadir unique ok , **decision trees, Random Forest, using python ({'scikit_learn':preprocessing.OneHotEncoding(drop=first), 'pandas':get_dummies(drop_first=True)}
+C.Ordinal Encoding -> ijad ye adad ke ba ham darertebatan masala 1 badtar az 2 v 2 bad tar az 3 v... , using python (pandas:replase())
+*noise -> 5 ravesh rayej baraye tashkhis noise v outlier:
+1.std -> 3 barabar std b ehtemal ziyad noise ya outlier
+2.boxplot ->
+
+
+
+
+
+
