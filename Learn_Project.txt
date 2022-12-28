@@ -13,7 +13,9 @@ B.one_Hot Encoding -> dodoi ijad mikone(0,1) , moshkel in ravesh afzayesh abad d
 C.Ordinal Encoding -> ijad ye adad ke ba ham darertebatan masala 1 badtar az 2 v 2 bad tar az 3 v... , using python (pandas:replase())
 *noise -> 5 ravesh rayej baraye tashkhis noise v outlier:
 1.std -> 3 barabar std b ehtemal ziyad noise ya outlier
-2.boxplot ->
+2.boxplot -> iqr
+3.dbscane clustring -> A.core points:(min_samples(HP), eps(HP)) - B.border points - C.Noise points  harche abad balatar bashe deghat kamtere
+4.isolation forest -> 
 
 
 
